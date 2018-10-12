@@ -19,5 +19,22 @@ module.exports = server => server.route([
       await server.robot.sendMorningMeetingMsg()
       return h.response({ status: 200 })
     }
+  },
+  {
+    method: 'GET',
+    path: '/drink-require',
+    handler: async (request, h) => {
+      await server.robot.sendDrinkRequireMsg()
+      return h.response({ status: 200 })
+    }
+  },
+  {
+    method: 'GET',
+    path: '/bug-report',
+    handler: async (request, h) => {
+      const bugList = await server.spider.getReportBugs()
+      await server.robot.sendBugReportMsg(bugList)
+      return h.response({ status: 200 })
+    }
   }
 ])

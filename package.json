@@ -15,10 +15,12 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
     "cn-holiday": "^1.2.1",
     "dayjs": "^1.7.7",
     "hapi": "^17.6.0",
     "hapi-pino": "^5.1.0",
+    "lodash": "^4.17.11",
     "node-schedule": "^1.3.0"
   },
   "devDependencies": {

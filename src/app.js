@@ -20,6 +20,7 @@ async function start() {
 
   // Setup Robot: server.robot
   server.decorate('server', 'robot', require('./robot')(server))
+  server.decorate('server', 'spider', require('./spider')(server))
 
   // Setup Routes
   require('./routes')(server)
