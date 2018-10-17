@@ -1,4 +1,4 @@
-### Wall Robot 瓦力机器人
+### Wall.E Robot 瓦力机器人
 
 一个钉钉群机器人，用于：
 
